@@ -39,4 +39,15 @@ public class User {
     this.isValidate = isValidate;
   }
 
+  public String toJSON() {
+      StringBuilder sb = new StringBuilder();
+      sb.append("{");
+      sb.append("\"id\":\"" + this.id + "\",");
+      sb.append("\"fn\":\"" + this.firstname + "\",");
+      sb.append("\"ln\":\"" + this.lastname + "\",");
+      sb.append("\"valid\":\"" + this.isValidate + "\"");
+      sb.append("}");
+      return sb.toString();
+  }
+
 }
