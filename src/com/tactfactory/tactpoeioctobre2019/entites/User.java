@@ -50,4 +50,8 @@ public class User {
       return sb.toString();
   }
 
+public String displayName() {
+    return String.format("%s %s", this.firstname, this.lastname);
+}
+
 }
